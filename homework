@@ -1,0 +1,45 @@
+class Person:
+def _init_ (self, Name, Address, Phone, Age):
+self.Name = Name
+self.Address = Address
+self.Phone = Phone
+self.Age = Age
+
+#Mutator Methods
+
+def set_Name(self,Name):
+self.Name = Name
+
+def set_Address(self, Address):
+self.Address = Address
+
+def set_Phone(self, Phone):
+self.Phone = Phone
+
+def set_Age(self, Age):
+self.Age = Age
+
+#Accessor Methods
+def get_Name(self):
+return self.Name
+
+def get_Address(self):
+return self.Address
+
+def get_Phone(self):
+return self.Phone
+
+def get_Age(self):
+return self.Age
+
+def get_details(self):
+return " Name : %s, Address: %s, Phone: %s, Age: %s" % (self.Name, self.Address, self.Phone,self.Age )
+
+
+Myself=Person('your name','Your address',288393920, 20)
+friend=Person('friend name','friend address',3436547557, 23)
+family_member=Person('family_member name','family_member address',35737576867, 40)
+
+print(Myself.get_details())
+print(friend.get_details())
+print(family_member.get_details())
